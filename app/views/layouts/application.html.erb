@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="<%= yield :html_tag_class %>">
   <head>
     <title><%= content_for(:title) || "Trinity Tag" %></title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -22,7 +22,9 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
-    <%= yield %>
+  <body class="<%= yield :body_tag_class %>">
+    <main>
+      <%= yield %>
+    </main>
   </body>
 </html>
