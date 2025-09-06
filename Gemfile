@@ -8,6 +8,7 @@ gem "pg", "~> 1.1"
 gem "propshaft"
 gem "puma", ">= 5.0"
 gem "rails", "~> 8.0.2", ">= 8.0.2.1"
+gem "rubocop", require: false
 gem "solid_cable"
 gem "solid_cache"
 gem "solid_queue"
@@ -24,6 +25,7 @@ group :development, :test do
   gem "faker"
   gem "factory_bot_rails"
   gem "rspec-rails"
+  gem "ruby-lsp", require: false
   gem "rubocop-rails-omakase", require: false
 end
 
@@ -34,9 +36,7 @@ end
 group :test do
   gem "capybara"
   gem "database_cleaner-active_record"
-  gem "selenium-webdriver"
   gem "shoulda-matchers"
   gem "simplecov", require: false
   gem "simplecov-console", require: false
-  gem "webdrivers"
 end
