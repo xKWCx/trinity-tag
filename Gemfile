@@ -2,6 +2,7 @@ source "https://rubygems.org"
 
 gem "bootsnap", require: false
 gem "devise"
+gem "devise_invitable"
 gem "importmap-rails"
 gem "jbuilder"
 gem "kamal", require: false
