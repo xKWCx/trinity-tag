@@ -1,7 +1,7 @@
 class CreateOrganizations < ActiveRecord::Migration[8.0]
   def change
     create_table :organizations do |t|
-      t.string :name
+      t.string :name, null: false
       t.string :website
       t.string :address
       t.string :city
@@ -10,7 +10,7 @@ class CreateOrganizations < ActiveRecord::Migration[8.0]
       t.string :country
       t.string :phone
       t.string :email
-      t.timestamps
+      t.timestamps null: false
     end
   end
 end
